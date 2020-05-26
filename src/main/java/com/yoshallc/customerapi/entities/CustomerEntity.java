@@ -1,4 +1,4 @@
-package com.yoshallc.customerservice.entities;
+package com.yoshallc.customerapi.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

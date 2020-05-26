@@ -1,8 +1,7 @@
-package com.yoshallc.customerservice;
+package com.yoshallc.customerapi;
 
-import com.yoshallc.customerservice.dtos.Customer;
-import com.yoshallc.customerservice.entities.CustomerEntity;
-import com.yoshallc.customerservice.repositories.CustomerRepository;
+import com.yoshallc.customerapi.entities.CustomerEntity;
+import com.yoshallc.customerapi.repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

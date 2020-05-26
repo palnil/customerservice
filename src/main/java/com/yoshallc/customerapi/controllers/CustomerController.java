@@ -1,7 +1,7 @@
-package com.yoshallc.customerservice.controllers;
+package com.yoshallc.customerapi.controllers;
 
-import com.yoshallc.customerservice.entities.CustomerEntity;
-import com.yoshallc.customerservice.services.CustomerService;
+import com.yoshallc.customerapi.entities.CustomerEntity;
+import com.yoshallc.customerapi.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

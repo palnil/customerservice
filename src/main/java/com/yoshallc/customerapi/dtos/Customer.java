@@ -1,4 +1,4 @@
-package com.yoshallc.customerservice.dtos;
+package com.yoshallc.customerapi.dtos;
 
 
 import lombok.AllArgsConstructor;
