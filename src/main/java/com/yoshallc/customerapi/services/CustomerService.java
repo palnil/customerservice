@@ -9,7 +9,9 @@ import org.springframework.stereotype.Service;
 public class CustomerService {
 
     @Autowired
-    CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;
+
+
 
     public Iterable<CustomerEntity> getAllCustomers(){
 

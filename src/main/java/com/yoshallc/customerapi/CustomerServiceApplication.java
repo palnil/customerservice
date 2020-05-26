@@ -27,7 +27,7 @@ public class CustomerServiceApplication {
             List<CustomerEntity> customers = Arrays.asList(
                     new CustomerEntity("John", "Smith", "M"),
                     new CustomerEntity("David", "Freeman", "M"),
-                    new CustomerEntity("Vanesa", "Brooks", "M"));
+                    new CustomerEntity("Vanesa", "Brooks", "F"));
             customers.forEach(customer -> customerRepository.save(customer));
         };
     }
