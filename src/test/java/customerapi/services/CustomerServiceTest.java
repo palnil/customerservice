@@ -1,5 +1,6 @@
 package customerapi.services;
 
+import com.yoshallc.customerapi.dtos.Customer;
 import com.yoshallc.customerapi.repositories.CustomerRepository;
 import com.yoshallc.customerapi.services.CustomerService;
 import lombok.extern.slf4j.Slf4j;
@@ -10,6 +11,7 @@ import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import static org.mockito.Mockito.*;
 
@@ -34,6 +36,12 @@ public class CustomerServiceTest {
         when(customerRepository.findAll()).thenReturn(null);
         customerService.getAllCustomers();
         verify(customerRepository, times(1)).findAll();
+    }
+
+    @Test
+    public void UserWithFullSex_ReturnsUserWithFullSex(){
+        Customer customer = new Customer((long)1001,"bob","marley","m");
+        assertEquals("Male",customerService.UserWithFullSex(customer).getSex());
     }
 
 
