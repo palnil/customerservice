@@ -9,13 +9,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import static org.mockito.Mockito.*;
 
-@ExtendWith(SpringExtension.class)
+@ExtendWith(MockitoExtension.class)
 @Slf4j
 public class CustomerServiceTest {
 
@@ -24,7 +25,7 @@ public class CustomerServiceTest {
     private CustomerService customerService;
 
     @MockBean
-    CustomerRepository customerRepository;
+    CustomerRepository customerRepository = mock(CustomerRepository.class);
 
     @BeforeEach
     public void setup(){
